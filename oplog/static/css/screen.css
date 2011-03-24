@@ -1,0 +1,102 @@
+html {
+  height: 100%;
+  margin-bottom: 1px
+}
+
+body {
+  padding: 3em 0 1em 0;
+}
+
+h1 a,
+h1 a:hover,
+h1 a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+p, table, hr, .box {
+  margin-bottom: 25px;
+}
+
+.box p {
+  margin-bottom: 10px;
+}
+
+div#entry-control input[type="text"]#entry-datetime {
+  cursor: pointer;
+}
+
+.datepicker_vista .time .hour,
+.datepicker_vista .time .minutes {
+  top: -5px;
+}
+
+div#logout-util {
+  padding-top: 17px;
+}
+
+a#message-hide {
+  float: right;
+}
+
+input#entry-input {
+  width: 99%;
+  margin: 0;
+}
+
+div#entry-control input[type='text'] {
+  border: 0;
+  cursor: default;
+  margin: 10px 0 10px 0;
+  padding: 3px 0;
+  text-align: right;
+}
+
+input#entry-submit {
+  margin: 10px 0 10px 0;
+  padding: 3px 10px;
+}
+
+div#entry-list {
+  margin: 0;
+  padding: 0;
+}
+
+div#entry-list div.entry {
+  display: block;
+  margin-bottom: 1em;
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 1em;
+}
+
+div#entry-list div.entry div.meta {
+  float: right;
+  padding: 0 0 5px 5px;
+  text-align: right;
+}
+
+div#entry-control {
+  float: right;
+}
+
+div#entry-utils {
+  padding-top: 0.5em;
+}
+
+table.form {
+  width: 1px;
+}
+
+table.form tbody tr td {
+  background-color: #fff;
+}
+
+table.form tr th {
+  text-align: right;
+  width: 0;
+  white-space: nowrap;
+}
+
+table.form tr td.control {
+  text-align: right;
+}

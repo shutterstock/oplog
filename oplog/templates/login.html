@@ -1,0 +1,33 @@
+{% extends "simple.html" %}
+
+{% block head_title %}Login - {% end %}
+
+{% block content %}
+
+<form action="/login" method="post">
+  <input id="form-next" name="next" type="hidden" value="{{ escape(next) }}">
+  <table class="form">
+    <tr>
+      <th><label for="form-username">Username:</label></th>
+      <td><input autocomplete="off" class="text" id="form-username" name="username" type="text" value="{{ escape(username) }}"></td>
+    </tr>
+    <tr>
+      <th><label for="form-password">Password:</label></th>
+      <td><input autocomplete="off" class="text" id="form-password" name="password" type="password"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        {% if settings.theme.reset_password %}<a href="{{ settings.theme.reset_password }}">Reset password</a>{% end %}
+        <input class="right" type="submit" value="Login"></td>
+      </td>
+    </tr>
+  </table>
+</form>
+
+{% end %}
+
+{% block script %}
+
+$("form-{{ select }}").select();
+
+{% end %}

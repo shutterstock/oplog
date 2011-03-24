@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "find": {
+      "title": "filter options",
+      "type": "object",
+      "required": true
+    },
+    "skip": {
+      "title": "number of entries to skip",
+      "type": "integer",
+      "required": false
+    },
+    "limit": {
+      "title": "maximum number of results",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000,
+      "required": false
+    },
+    "fields": {
+      "title": "list of fields to return",
+      "type": "array",
+      "required": false
+    },
+    "sort": {
+      "fields": "sort results",
+      "type": "array",
+      "required": false
+    }
+  }
+}

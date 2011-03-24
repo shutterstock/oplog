@@ -1,0 +1,7 @@
+*.cache
+*.db
+*.log
+*.pid
+*.pyc
+*swp
+_trial_temp

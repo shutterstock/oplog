@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/entry" id="entry-form" method="post">
+  <div class="span-24 last">
+    <input autocomplete="off" class="title" id="entry-input" type="title">
+  </div>
+  <div class="span-24 last">
+    <div id="entry-control">
+      <input autocomplete="off" id="entry-datetime" type="text" value="">
+      <input id="entry-id" type="hidden" value="">
+      <input id="entry-submit" type="submit" value="Save entry">
+    </div>
+    <div id="entry-utils">
+      <a id="entry-refresh" href="#/refresh">Refresh</a> |
+      <a id="entry-clear" href="#/clear">Clear</a>
+    </div>
+  </div>
+  <div id="entry-list"></div>
+  <div><a class="right" id="entry-more" href="#/more">More</a></div>
+</form>
+
+{% end %}
+
+{% block script %}uiOnLoad();{% end %}

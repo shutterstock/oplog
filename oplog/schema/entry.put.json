@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "minLength": 24,
+      "maxLength": 24
+    },
+    "_date": {
+      "type": "string",
+      "format": "date-time",
+      "required": true
+    },
+    "_type": {
+      "type": "string",
+      "required": true
+    },
+    "_user": {
+      "type": "string",
+      "required": true
+    },
+    "summary": {
+      "type": "string"
+    }
+  }
+}
