@@ -33,7 +33,11 @@ class mongify:
 
     @staticmethod
     def _dict_encode(value, clean=False):
-        return dict([(mongify.encode(n), mongify.encode(v)) for n, v in value.items() if not clean or not n.startswith('_')])
+        return dict(
+            [(mongify.encode(n), mongify.encode(v)) \
+                for n, v \
+                in value.items() \
+                if not clean or n.strip() not in ('_id', '_user')])
 
     @staticmethod
     def _dict_decode(value):

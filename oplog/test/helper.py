@@ -5,7 +5,7 @@
 
 import os
 from twisted.internet import defer
-from twisted.trial import unittest
+from twisted.trial.unittest import TestCase
 import txmongo
 
 class Settings(object):
@@ -13,7 +13,7 @@ class Settings(object):
     class general(object):
         profile = schema = ''
 
-class MongoTestCase(unittest.TestCase):
+class MongoTestCase(TestCase):
 
     mongo_host = os.environ.get('OPLOG_TEST_MONGO_HOST', 'localhost')
     mongo_port = int(os.environ.get('OPLOG_TEST_MONGO_PORT', 27017))
